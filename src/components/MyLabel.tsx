@@ -40,7 +40,7 @@ export interface Props {
 
 export const MyLabel = ({
    allCaps    = false,
-   color      = 'primary',
+   color      = 'secondary',
    label      = 'No Label',
    size       = 'normal',
    fontWeight = 'font-normal',
