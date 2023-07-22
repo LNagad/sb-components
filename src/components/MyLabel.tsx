@@ -36,8 +36,6 @@ export interface Props {
      * Define the label background color
     */
     backgroundColor?: string
-
-    
 }
 
 export const MyLabel = ({
@@ -60,3 +58,6 @@ export const MyLabel = ({
       </span>
    );
 };
+
+
+export default MyLabel;
