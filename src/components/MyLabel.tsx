@@ -48,13 +48,11 @@ export const MyLabel = ({
    backgroundColor = 'transparent'
 }: Props ) => {
 
-   const text = allCaps ? label.toUpperCase() : label;
-
    return (
       <span 
          style={{ color: fontColor, backgroundColor }}
          className={ `label ${size} ${fontWeight} text-${color}` }>
-         { text }
+         { allCaps ? label.toUpperCase() : label }
       </span>
    );
 };
