@@ -28,11 +28,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-
-      - name: Authenticate with npm
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}" --userconfig .npmrc --registry https://registry.npmjs.org/
-
-      - name: Publish to npm
-        run: npm publish
